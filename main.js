@@ -25,7 +25,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box1.innerHTML}`;
     box1.classList.add("done");
     box2.classList.add("done");
@@ -37,7 +37,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box1.innerHTML}`;
     box1.classList.add("done");
     box5.classList.add("done");
@@ -49,7 +49,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box1.innerHTML}`;
     box1.classList.add("done");
     box4.classList.add("done");
@@ -61,7 +61,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box2.innerHTML}`;
     box2.classList.add("done");
     box5.classList.add("done");
@@ -73,7 +73,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box3.innerHTML}`;
     box3.classList.add("done");
     box5.classList.add("done");
@@ -85,7 +85,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box3.innerHTML}`;
     box3.classList.add("done");
     box6.classList.add("done");
@@ -97,7 +97,7 @@ function win(e) {
   ) {
     setTimeout(function () {
       winner.classList.add("show");
-    }, 500);
+    }, 100);
     winner.innerHTML = `winner is ${box4.innerHTML}`;
     box4.classList.add("done");
     box5.classList.add("done");
@@ -108,10 +108,8 @@ function win(e) {
     box7.innerHTML !== ""
   ) {
     setTimeout(function () {
-      setTimeout(function () {
-        winner.classList.add("show");
-      }, 500);
-    }, 500);
+      winner.classList.add("show");
+    }, 100);
     winner.innerHTML = `winner is ${box7.innerHTML}`;
     box7.classList.add("done");
     box8.classList.add("done");
