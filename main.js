@@ -3,6 +3,7 @@ let reset = document.querySelector(".reset");
 let turnHtml = document.querySelector(".turn");
 let winner = document.querySelector(".winner");
 let turn = "x";
+let check = false;
 
 function change(e) {
   if (turn === "x" && e.innerHTML === "") {
@@ -115,6 +116,19 @@ function win(e) {
     box7.classList.add("done");
     box8.classList.add("done");
     box9.classList.add("done");
+  } else if (
+    box1.innerHTML !== "" &&
+    box2.innerHTML !== "" &&
+    box3.innerHTML !== "" &&
+    box4.innerHTML !== "" &&
+    box5.innerHTML !== "" &&
+    box6.innerHTML !== "" &&
+    box7.innerHTML !== "" &&
+    box8.innerHTML !== "" &&
+    check === false
+  ) {
+    winner.classList.add("show");
+    winner.innerHTML = "draw";
   }
 }
 
